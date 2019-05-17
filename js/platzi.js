@@ -17,6 +17,7 @@
         <a class="diploma" href="https://www.platzi.com/${diploma.diploma_link}">
             <img src="${diploma.golden_achievement}" alt="">
             <p>${diploma.title}</p>
+            <span></span>
         </a>
     `
     }
@@ -25,6 +26,7 @@
         <a class="diploma" href="https://www.platzi.com/${diploma.diploma_link}">
             <img src="${diploma.badge}" alt="">
             <p>${diploma.title}</p>
+            <span></span>
         </a>
     `
     }

@@ -211,8 +211,8 @@ body .studiesWrapper{
     height: 100%;
     background: #18bc9b85;
     display: flex;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center
@@ -236,7 +236,8 @@ body .studiesWrapper{
     width: 100%;
     height: 100%;
     border-radius: 5px;
-    border-bottom-left-radius: 0
+    border-bottom-left-radius: 0;
+    transition: .5s
 }
 .proyect-img img{
     width: 100%;
@@ -253,7 +254,7 @@ body .studiesWrapper{
     color: white;
 }
 .proyect-img .fab:hover{
-    color: #ccc
+    color: #777
 }
 .proyect-img .fab:nth-of-type(1){
     left: 10%
@@ -296,7 +297,7 @@ body .studiesWrapper{
     cursor: pointer;
     text-decoration: none;
 }
-.diploma::after{
+.diploma span{
     content: "";
     position: absolute;
     z-index: 0;
@@ -306,12 +307,12 @@ body .studiesWrapper{
     height:10%;
     background: rgba(0, 0, 0,0.3);
     border-radius:50%;
+    cursor:default
 }
 .diploma img{
     position: absolute;
     width: 100%;
     height: 100%;
-    
 }
 .diploma p{
     transition:.5s;
@@ -360,14 +361,6 @@ body .studiesWrapper{
     color: #777;
     font-size: 1.6em
 }
-.studies span{
-    content: "";
-    width: 80%;
-    height: 1px;
-    top:5em;
-    left: 10%;
-    position: absolute;
-}
 footer{
     background: linear-gradient(120deg,#18bc9c,#1d6e5e,#199179);
     padding: 2%;
@@ -385,10 +378,11 @@ footer{
     font-size: 2em;
     margin: 10% 15%;
     color: white;
-    cursor: pointer
+    cursor: pointer;
+    transition: .3s
 }
 .social-icons .fab:hover, .social-icons .fas:hover{
-    color: rgba(0, 0, 0, 0.5)
+    text-shadow: 5px 3px black
 }
 .copywrite p{
     margin: 0;
