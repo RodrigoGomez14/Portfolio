@@ -247,14 +247,14 @@ body .studiesWrapper{
     border-bottom-left-radius: 0
 
 }
-.proyect-img .fab{
+.proyect-img .fab, .fas{
     text-shadow: 1px 1px black;
     z-index: 2;
     cursor: pointer;
     font-size: 30px;
     color: white;
 }
-.proyect-img .fab:hover{
+.proyect-img .fab:hover, .fas:hover{
     color: #777
 }
 .proyect-img .fab:nth-of-type(1){
