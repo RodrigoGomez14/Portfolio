@@ -14,5 +14,9 @@ const $VG = document.getElementById('valvulasGomez')
 $VG.addEventListener("click", () => {
     window.location.href = 'http://www.valvulasgomez.com'
 })
+const $TDL = document.getElementById('ToDoList')
+$TDL.addEventListener("click", () => {
+    window.location.href = 'https://rodrigogomez14.github.io/ReactToDoList/'
+})
 
 
