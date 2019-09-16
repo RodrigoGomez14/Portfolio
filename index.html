@@ -9,121 +9,389 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
-    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <title>Rodrigo Gomez Portafolio</title>
 </head>
 
 <body>
-    <nav class="navBar">
-        <div class="menu-icon">
-            <i class="fas fa-ellipsis-h" id="menuIcon"></i>
-        </div>
-        <div class="buttons" id="menu">
-            <a href="#about" id="button1"><i class="fas fa-info"></i></a>
-            <a href="#portfolio" id="button2"><i class="fas fa-info"></i></a>
-            <a href="#studies" id="button3"><i class="fas fa-info"></i></a>
-            <a href="#contact" id="button4"><i class="fas fa-info"></i></a>
-        </div>
-        <div class="buttonsGrande" id="menuGrande">
-            <a href="#about" id="button1">Acerca de</a>
-            <a href="#portfolio" id="button2">Proyectos</a>
-            <a href="#studies" id="button3">Educacion</a>
-            <a href="#contact" id="button4">Contacto</a>
+
+    <!--NavBar-->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-one">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mr-auto">
+                <li class="nav-item ml-4 mr-4">
+                    <a class="nav-link" href="#">Proyectos</a>
+                </li>
+                <li class="nav-item ml-4 mr-4">
+                    <a class="nav-link" href="#">Acerca De...</a>
+                </li>
+                <li class="nav-item ml-4 mr-4">
+                    <a class="nav-link" href="#">Educacion</a>
+                </li>
+                <li class="nav-item ml-4 mr-4">
+                    <a class="nav-link" href="#">Contacto</a>
+                </li>
+            </ul>
         </div>
     </nav>
-    <section class="section-about" id="about">
-        <div class="about">
-            <h1>Bienvenido a portafolio!</h1>
-            <p class="about-text">
-                Mi nombre es Rodrigo Gomez y soy estudiante de desarrollo front-end. Aqui se podran encontrar algunos de mis proyectos personales y el camino por el que continuamente estoy avanzando en conocimientos acerca del desarrolo web y movil.
-            </p>
+    <!--NavBar-->
+
+    <!--Hero-->
+    <div class="conatiner hero bg-gradient-one">
+        <div class="row mt-4">
+            <div class="col-12 text-center">
+                <img src="./assets/img/avatar.png" width="250 px" alt="">
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-12 form-group text-center text-white">
+                <h1 class="title">Rodrigo Gómez</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 form-group text-center text-white">
+                <h2 class="subtitle">Desarrollador Front-End</h2>
+            </div>
+        </div>
+    </div>
+    <!--Hero-->
+
+    <!--Portafolio -->
+    <section class="page-section ">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 form-group text-center">
+                    <h1 class="title text-two">Portafolio</h1>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-10 offset-1">
+                    <div class="card text-center">
+                        <div class="card-header bg-one">
+                            <ul class="nav nav-tabs card-header-tabs">
+                                <li class="nav-item">
+                                    <a class="nav-link text-white active" data-toggle="tab" role="tab"
+                                        href="#frontEnd">Front-End</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link  text-white" data-toggle="tab" role="tab" href="#react">React</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link  text-white" data-toggle="tab" role="tab"
+                                        href="#aplicacionesMoviles">Aplicaciones
+                                        Moviles</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link  text-white " data-toggle="tab" role="tab"
+                                        href="#sitiosWeb">Sitios
+                                        Web</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-body">
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="frontEnd" role="tabpanel"
+                                    aria-labelledby="home-tab">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-4 form-group">
+                                                <div class="card" style="width: 18rem">
+                                                    <img src="./assets/img/Dollar Clicker.PNG" class="card-img"
+                                                        alt="...">
+                                                </div>
+                                            </div>
+                                            <div class="col-4 form-group">
+                                                <div class="card" style="width: 18rem">
+                                                    <img src="./assets/img/rick y morty.png" class="card-img" alt="...">
+                                                </div>
+                                            </div>
+                                            <div class="col-4 form-group">
+                                                <div class="card" style="width: 18rem">
+                                                    <img src="./assets/img/Platzi Video.png" class="card-img" alt="...">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="react" role="tabpanel" aria-labelledby="profile-tab">
+                                    <div class="col-4 offset-4 form-group">
+                                        <div class="card" style="width: 18rem">
+                                            <img src="./assets/img/ToDoList.png" class="card-img" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="aplicacionesMoviles" role="tabpanel"
+                                    aria-labelledby="contact-tab">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <div class="card" style="width: 18rem">
+                                                    <img src="./assets/img/AnotadorUniversal.jpg" class="card-img"
+                                                        alt="...">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="sitiosWeb" role="tabpanel" aria-labelledby="contact-tab">
+                                    <div class="col-4 offset-4 form-group">
+                                        <div class="card" style="width: 18rem">
+                                            <img src="./assets/img/valvulas gomez.png" class="card-img" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    <section class="portfolioWrapper">
-        <section class="portfolio" id="portfolio">
-            <h1>Proyectos</h1>
-            <h3>Front-End</h3>
-            <div class="proyect-list">
-                <div class="proyect">
-                    <div class="proyect-img">
-                        <img src="assets/img/Dollar Clicker.PNG" alt="">
-                        <div class="project-info">
-                            <p>Dollar Clicker</p>
-                            <i class="fab fa-codepen" id="codePen-DollarClicker"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="proyect">
-                    <div class="proyect-img">
-                        <img src="assets/img/rick y morty.png" alt="">
-                        <div class="project-info">
-                            <p>Rick & Morty Info</p>
-                            <i class="fab fa-github" id="rick-morty"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="proyect">
-                    <div class="proyect-img">
-                        <img src="assets/img/Platzi Video.png" alt="">
-                        <div class="project-info">
-                            <p>Movie Info</p>
-                            <i class="fab fa-github" id="platziVideo"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="proyect">
-                    <div class="proyect-img">
-                        <img src="assets/img/ToDoList.png" alt="">
-                        <div class="project-info">
-                            <p>To Do List <br /> con <br /> <i class="fab fa-react" id="React"></i></p>
+    <!--Portafolio -->
 
-                            <i class="fab fa-github" id="ToDoList"></i>
-                        </div>
-                    </div>
+    <!--About -->
+    <section class="page-section bg-gradient-one  text-white">
+        <div class="conatiner">
+            <div class="row ">
+                <div class="col-12 form-group text-center ">
+                    <h1 class="title">Acerca de mi...</h1>
                 </div>
             </div>
-            <h3>Aplicaciones Moviles</h3>
-            <div class="proyect-list">
-                <div class="proyect">
-                    <div class="proyect-img">
-                        <img src="assets/img/AnotadorUniversal.jpg" alt="">
-                        <div class="project-info">
-                            <i class="fab fa-google-play"></i>
-                            <i class="fab fa-github"></i>
-                        </div>
-                    </div>
+            <div class="row ">
+                <div class="col-4 text-left offset-2">
+                    <p class="portafolio-p">MI NOMBRE ES RODRIGO GOMEZ Y SOY ESTUDIANTE DE DESARROLLO FRONT-END.
+                    </p>
+                </div>
+                <div class="col-4 text-right ">
+                    <p class="portafolio-p">
+                        AQUI SE PODRAN ENCONTRAR ALGUNOS DE MIS PROYECTOS PERSONALES Y EL CAMINO POR EL QUE
+                        CONTINUAMENTE
+                        ESTOY
+                        AVANZANDO EN CONOCIMIENTOS ACERCA DEL DESARROLO WEB Y MOVIL.
+                    </p>
                 </div>
             </div>
-            <h3>Sitios Web</h3>
-            <div class="proyect-list">
-                <div class="proyect">
-                    <div class="proyect-img">
-                        <img src="assets/img/valvulas gomez.png" alt="">
-                        <div class="project-info">
-                            <i class="fas fa-globe-americas" id="valvulasGomez"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </section>
-    <section class="studiesWrapper">
-        <section class="studies" id="studies">
-            <h1>Educacion</h1>
-            <div class="proyect-list">
-            </div>
-        </section>
-    </section>
-
-    <footer id="contact">
-        <div class="social-icons">
-            <i class="fab fa-github" id="github"></i>
-            <i class="fab fa-linkedin" id="linkedin"></i>
-            <i class="fas fa-envelope" id="mail"></i>
         </div>
-        <div class="copywrite">
-            <p>Creado por Rodrigo Gomez</p>
+
+    </section>
+    <!--About -->
+
+    <!--Educacion -->
+    <section class="page-section text-one">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 form-group text-center">
+                    <h1 class="title">Educación</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Educacion -->
+
+    <!--Contacto -->
+    <section class="page-section bg-gradient-two text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center form-group">
+                    <div class="title">Contacto</div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-8 offset-2 text-center form-group">
+                    <form>
+                        <div class="form-row">
+                            <div class="col-8 offset-2 form-group">
+                                <input type="text" class="form-control" placeholder="Nombre Completo">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-8 offset-2 form-group">
+                                <input type="text" class="form-control" placeholder="E-mail">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-8 offset-2 form-group">
+                                <input type="text" class="form-control" placeholder="Asunto">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-10 offset-1 form-group">
+                                <textarea class="form-control" cols="10" rows="3"
+                                    placeholder="Escribe un mensaje..."></textarea>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-12 form-group text-center">
+                                <button type="button" class="btn btn-success btn-form">Enviar!</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Contacto -->
+
+    <!--Footer -->
+    <footer class="page-section bg-gradient-one text-white">
+        <div class="container">
+            <div class="row">
+
+                <!-- Footer Location -->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Location</h4>
+                    <p class="lead mb-0">2215 John Daniel Drive
+                        <br>Clark, MO 65243</p>
+                </div>
+
+                <!-- Footer Social Icons -->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Around the Web</h4>
+                    <a class="btn btn-outline-light btn-social mx-1" href="#">
+                        <i class="fab fa-fw fa-facebook-f"></i>
+                    </a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="#">
+                        <i class="fab fa-fw fa-twitter"></i>
+                    </a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="#">
+                        <i class="fab fa-fw fa-linkedin-in"></i>
+                    </a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="#">
+                        <i class="fab fa-fw fa-dribbble"></i>
+                    </a>
+                </div>
+
+                <!-- Footer About Text -->
+                <div class="col-lg-4">
+                    <h4 class="text-uppercase mb-4">About Freelancer</h4>
+                    <p class="lead mb-0">Freelance is a free to use, MIT licensed Bootstrap theme created by
+                        <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
+                </div>
+
+            </div>
         </div>
     </footer>
+    <!--Footer -->
+
+    <!--CopyRight -->
+    <section class="bg-gradient-three">
+        <div class="container mt-4 mb-4">
+            <div class="row">
+                <div class="col text-center">
+                    <small>Copyright © Rodrigo Gomez 2019</small>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--CopyRight -->
+
+
+
+    <!--
+        <section class=" portfolioWrapper">
+                    <section class="portfolio" id="portfolio">
+                        <h1>Proyectos</h1>
+                        <h3>Front-End</h3>
+                        <div class="proyect-list">
+                            <div class="proyect">
+                                <div class="proyect-img">
+                                    <img src="assets/img/Dollar Clicker.PNG" alt="">
+                                    <div class="project-info">
+                                        <p>Dollar Clicker</p>
+                                        <i class="fab fa-codepen" id="codePen-DollarClicker"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="proyect">
+                                <div class="proyect-img">
+                                    <img src="assets/img/rick y morty.png" alt="">
+                                    <div class="project-info">
+                                        <p>Rick & Morty Info</p>
+                                        <i class="fab fa-github" id="rick-morty"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="proyect">
+                                <div class="proyect-img">
+                                    <img src="assets/img/Platzi Video.png" alt="">
+                                    <div class="project-info">
+                                        <p>Movie Info</p>
+                                        <i class="fab fa-github" id="platziVideo"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="proyect">
+                                <div class="proyect-img">
+                                    <img src="assets/img/ToDoList.png" alt="">
+                                    <div class="project-info">
+                                        <p>To Do List <br /> con <br /> <i class="fab fa-react" id="React"></i></p>
+
+                                        <i class="fab fa-github" id="ToDoList"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h3>Aplicaciones Moviles</h3>
+                        <div class="proyect-list">
+                            <div class="proyect">
+                                <div class="proyect-img">
+                                    <img src="assets/img/AnotadorUniversal.jpg" alt="">
+                                    <div class="project-info">
+                                        <i class="fab fa-google-play"></i>
+                                        <i class="fab fa-github"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h3>Sitios Web</h3>
+                        <div class="proyect-list">
+                            <div class="proyect">
+                                <div class="proyect-img">
+                                    <img src="assets/img/valvulas gomez.png" alt="">
+                                    <div class="project-info">
+                                        <i class="fas fa-globe-americas" id="valvulasGomez"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    </section>
+                    <section class="studiesWrapper">
+                        <section class="studies" id="studies">
+                            <h1>Educacion</h1>
+                            <div class="proyect-list">
+                            </div>
+                        </section>
+                    </section>
+
+                    <footer id="contact">
+                        <div class="social-icons">
+                            <i class="fab fa-github" id="github"></i>
+                            <i class="fab fa-linkedin" id="linkedin"></i>
+                            <i class="fas fa-envelope" id="mail"></i>
+                        </div>
+                        <div class="copywrite">
+                            <p>Creado por Rodrigo Gomez</p>
+                        </div>
+                    </footer>
+                    -->
+
+
+
     <script src="js/menu.js"></script>
     <script src="js/redireccionFooter.js"></script>
     <script src="js/platzi.js">
