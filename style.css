@@ -1,15 +1,18 @@
-.hero{
-    min-height: 90vh;
-    padding-top: 65px;
+body{
+    position:relative;
+}
+#inicio{
+    min-height: 100vh;
+    position:relative
 }
 .bg-gradient-one{
-    background: linear-gradient(-45deg,#2c3e50,#273b47 25%,#1e5372);
+    background: linear-gradient(45deg,#2c3e50,#273b47 25%,#1e5372d5);
 }
 .bg-gradient-two{
     background:#1abc9c;
 }
 .bg-gradient-three{
-    background:#2c3e50;
+    background:#2c3e50 !important;
 }
 .bg-one{
     background-color: #1e5372!important
@@ -25,6 +28,45 @@
 }
 .page-section{
     padding: 6rem 0
+}
+#icon-hero{
+    position:absolute;
+    bottom:5%;
+    left:50%;
+    font-size: 30px;
+    transform: scale(1.5);
+    animation-duration: .5s;
+    animation-fill-mode: both
+}
+#icon-hero .fas{
+    transition:1s;
+    color:white !important;
+}
+#icon-hero .fas:hover{
+    color:#aaaaaa8e !important;
+}
+@keyframes in{
+    from{
+        transform: scale(.5);
+        opacity: 0.3
+    }
+    to{
+        transform: scale(1.5);
+        opacity: 1
+    }
+}
+@keyframes out{
+    from{
+        transform: scale(1.5);
+        opacity: 1
+    }
+    to{
+        transform: scale(.5);
+        opacity: 0.3
+    }
+}
+.modal-footer .fab{
+    font-size: 30px;
 }
 .nav-link{
     font-size: 20px;
@@ -60,4 +102,30 @@
     color: #1e5372;
     font-weight: bold;
     font-size: 17px
+}
+.modal .fab,
+.modal .fas{
+    cursor: pointer
+}
+.github{
+    color:black
+}
+.codepen{
+    color:black
+}
+.googleplay{
+    color:black
+}
+.website{
+    color:black
+}
+#portafolio-card{
+    animation-timing-function: ease-out;
+}
+@keyframes cardin{
+    from{
+        transform: translateX(100%) translateY(80%) ;
+    }
+    to{
+    }
 }

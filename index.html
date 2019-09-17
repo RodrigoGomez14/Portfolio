@@ -20,13 +20,14 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="./smooth-scroll.polyfills.min.js"></script>
     <title>Rodrigo Gomez Portafolio</title>
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navBar">
 
     <!--NavBar-->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-one">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-one" id="navBar">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -34,16 +35,19 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto mr-auto">
                 <li class="nav-item ml-4 mr-4">
-                    <a class="nav-link" href="#">Proyectos</a>
+                    <a data-scroll class="nav-link" href="#inicio">Inicio</a>
                 </li>
                 <li class="nav-item ml-4 mr-4">
-                    <a class="nav-link" href="#">Acerca De...</a>
+                    <a data-scroll class="nav-link" href="#portafolio">Portafolio</a>
                 </li>
                 <li class="nav-item ml-4 mr-4">
-                    <a class="nav-link" href="#">Educacion</a>
+                    <a data-scroll class="nav-link" href="#acercaDe">Acerca De...</a>
                 </li>
                 <li class="nav-item ml-4 mr-4">
-                    <a class="nav-link" href="#">Contacto</a>
+                    <a data-scroll class="nav-link" href="#educacion">Educacion</a>
+                </li>
+                <li class="nav-item ml-4 mr-4">
+                    <a data-scroll class="nav-link" href="#contacto">Contacto</a>
                 </li>
             </ul>
         </div>
@@ -51,36 +55,42 @@
     <!--NavBar-->
 
     <!--Hero-->
-    <div class="conatiner hero bg-gradient-one">
-        <div class="row mt-4">
-            <div class="col-12 text-center">
-                <img src="./assets/img/avatar.png" width="250 px" alt="">
+    <section id="inicio" class="page-section bg-gradient-one  text-white">
+        <div class="container">
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <img src="./assets/img/avatar.png" width="250 px" alt="">
+                </div>
             </div>
-        </div>
-        <div class="row mt-4">
-            <div class="col-12 form-group text-center text-white">
-                <h1 class="title">Rodrigo Gómez</h1>
+            <div class="row mt-4">
+                <div class="col-12 form-group text-center text-white">
+                    <h1 class="title">Rodrigo Gómez</h1>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-12 form-group text-center text-white">
-                <h2 class="subtitle">Desarrollador Front-End</h2>
+            <div class="row">
+                <div class="col-12 form-group text-center text-white">
+                    <h2 class="subtitle">Desarrollador Front-End</h2>
+                </div>
             </div>
-        </div>
-    </div>
+            <div id="icon-hero">
+                <a data-scroll href="#portafolio">
+                    <i class="fas fa-angle-double-down"></i>
+                </a>
+            </div>
+    </section>
     <!--Hero-->
 
     <!--Portafolio -->
-    <section class="page-section ">
+    <section id="portafolio" class="page-section text-one ">
         <div class="container">
             <div class="row">
                 <div class="col-12 form-group text-center">
-                    <h1 class="title text-two">Portafolio</h1>
+                    <h1 class="title">Portafolio</h1>
                 </div>
             </div>
-            <div class="row ">
+            <div class="row">
                 <div class="col-10 offset-1">
-                    <div class="card text-center">
+                    <div id="portafolio-card" class="card text-center">
                         <div class="card-header bg-one">
                             <ul class="nav nav-tabs card-header-tabs">
                                 <li class="nav-item">
@@ -110,18 +120,26 @@
                                         <div class="row">
                                             <div class="col-4 form-group">
                                                 <div class="card" style="width: 18rem">
-                                                    <img src="./assets/img/Dollar Clicker.PNG" class="card-img"
-                                                        alt="...">
+                                                    <a href="" data-toggle="modal" data-target="#modalBillClicker">
+                                                        <img src=" ./assets/img/Dollar Clicker.PNG" class="card-img"
+                                                            alt="...">
+                                                    </a>
                                                 </div>
                                             </div>
                                             <div class="col-4 form-group">
                                                 <div class="card" style="width: 18rem">
-                                                    <img src="./assets/img/rick y morty.png" class="card-img" alt="...">
+                                                    <a href="">
+                                                        <img src="./assets/img/rick y morty.png" class="card-img"
+                                                            alt="...">
+                                                    </a>
                                                 </div>
                                             </div>
                                             <div class="col-4 form-group">
                                                 <div class="card" style="width: 18rem">
-                                                    <img src="./assets/img/Platzi Video.png" class="card-img" alt="...">
+                                                    <a href="">
+                                                        <img src="./assets/img/Platzi Video.png" class="card-img"
+                                                            alt="...">
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -130,7 +148,9 @@
                                 <div class="tab-pane fade" id="react" role="tabpanel" aria-labelledby="profile-tab">
                                     <div class="col-4 offset-4 form-group">
                                         <div class="card" style="width: 18rem">
-                                            <img src="./assets/img/ToDoList.png" class="card-img" alt="...">
+                                            <a href="">
+                                                <img src="./assets/img/ToDoList.png" class="card-img" alt="...">
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -140,8 +160,10 @@
                                         <div class="row">
                                             <div class="col-4">
                                                 <div class="card" style="width: 18rem">
-                                                    <img src="./assets/img/AnotadorUniversal.jpg" class="card-img"
-                                                        alt="...">
+                                                    <a href="">
+                                                        <img src="./assets/img/AnotadorUniversal.jpg" class="card-img"
+                                                            alt="...">
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -150,7 +172,9 @@
                                 <div class="tab-pane fade" id="sitiosWeb" role="tabpanel" aria-labelledby="contact-tab">
                                     <div class="col-4 offset-4 form-group">
                                         <div class="card" style="width: 18rem">
-                                            <img src="./assets/img/valvulas gomez.png" class="card-img" alt="...">
+                                            <a href="">
+                                                <img src="./assets/img/valvulas gomez.png" class="card-img" alt="...">
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -163,15 +187,17 @@
     </section>
     <!--Portafolio -->
 
+
+
     <!--About -->
-    <section class="page-section bg-gradient-one  text-white">
-        <div class="conatiner">
-            <div class="row ">
-                <div class="col-12 form-group text-center ">
-                    <h1 class="title">Acerca de mi...</h1>
+    <section id="acercaDe" class="page-section bg-gradient-one  text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 form-group text-center">
+                    <h1 class="title">Acerca De...</h1>
                 </div>
             </div>
-            <div class="row ">
+            <div class="row">
                 <div class="col-4 text-left offset-2">
                     <p class="portafolio-p">MI NOMBRE ES RODRIGO GOMEZ Y SOY ESTUDIANTE DE DESARROLLO FRONT-END.
                     </p>
@@ -186,12 +212,12 @@
                 </div>
             </div>
         </div>
-
     </section>
     <!--About -->
 
+
     <!--Educacion -->
-    <section class="page-section text-one">
+    <section id="educacion" class="page-section text-one">
         <div class="container">
             <div class="row">
                 <div class="col-12 form-group text-center">
@@ -206,7 +232,7 @@
     <!--Educacion -->
 
     <!--Contacto -->
-    <section class="page-section bg-gradient-two text-white">
+    <section id="contacto" class="page-section bg-gradient-two text-white">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center form-group">
@@ -291,110 +317,88 @@
     <!--Footer -->
 
     <!--CopyRight -->
-    <section class="bg-gradient-three">
-        <div class="container mt-4 mb-4">
+    <section class="pt-4 pb-4 bg-gradient-three">
+        <div class="container">
             <div class="row">
                 <div class="col text-center">
-                    <small>Copyright © Rodrigo Gomez 2019</small>
+                    <small class="text-white">Copyright © Rodrigo Gomez 2019</small>
                 </div>
             </div>
         </div>
     </section>
     <!--CopyRight -->
 
-
-
-    <!--
-        <section class=" portfolioWrapper">
-                    <section class="portfolio" id="portfolio">
-                        <h1>Proyectos</h1>
-                        <h3>Front-End</h3>
-                        <div class="proyect-list">
-                            <div class="proyect">
-                                <div class="proyect-img">
-                                    <img src="assets/img/Dollar Clicker.PNG" alt="">
-                                    <div class="project-info">
-                                        <p>Dollar Clicker</p>
-                                        <i class="fab fa-codepen" id="codePen-DollarClicker"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="proyect">
-                                <div class="proyect-img">
-                                    <img src="assets/img/rick y morty.png" alt="">
-                                    <div class="project-info">
-                                        <p>Rick & Morty Info</p>
-                                        <i class="fab fa-github" id="rick-morty"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="proyect">
-                                <div class="proyect-img">
-                                    <img src="assets/img/Platzi Video.png" alt="">
-                                    <div class="project-info">
-                                        <p>Movie Info</p>
-                                        <i class="fab fa-github" id="platziVideo"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="proyect">
-                                <div class="proyect-img">
-                                    <img src="assets/img/ToDoList.png" alt="">
-                                    <div class="project-info">
-                                        <p>To Do List <br /> con <br /> <i class="fab fa-react" id="React"></i></p>
-
-                                        <i class="fab fa-github" id="ToDoList"></i>
-                                    </div>
-                                </div>
+    <!--Modal Bill Clicker -->
+    <div class="modal fade" id="modalBillClicker" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-one" id="exampleModalLabel">Bill Clicker</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <img src="./assets/img/Dollar Clicker.PNG" style="max-width: 100%" alt="">
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-10 offset-1 text-left">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo rerum iste
+                                    consequuntur officia, exercitationem ipsum quibusdam, autem optio, voluptatum ullam
+                                    numquam debitis vero tempora hic? Exercitationem ea quia voluptatem incidunt.</p>
                             </div>
                         </div>
-                        <h3>Aplicaciones Moviles</h3>
-                        <div class="proyect-list">
-                            <div class="proyect">
-                                <div class="proyect-img">
-                                    <img src="assets/img/AnotadorUniversal.jpg" alt="">
-                                    <div class="project-info">
-                                        <i class="fab fa-google-play"></i>
-                                        <i class="fab fa-github"></i>
-                                    </div>
-                                </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col text-center">
+                                <i class="fab fa-codepen codepen" id="codePen-DollarClicker"></i>
+                            </div>
+                            <div class="col text-center">
+                                <i class="fab fa-github github" id="github-DollarClicker"></i>
                             </div>
                         </div>
-                        <h3>Sitios Web</h3>
-                        <div class="proyect-list">
-                            <div class="proyect">
-                                <div class="proyect-img">
-                                    <img src="assets/img/valvulas gomez.png" alt="">
-                                    <div class="project-info">
-                                        <i class="fas fa-globe-americas" id="valvulasGomez"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    </section>
-                    <section class="studiesWrapper">
-                        <section class="studies" id="studies">
-                            <h1>Educacion</h1>
-                            <div class="proyect-list">
-                            </div>
-                        </section>
-                    </section>
-
-                    <footer id="contact">
-                        <div class="social-icons">
-                            <i class="fab fa-github" id="github"></i>
-                            <i class="fab fa-linkedin" id="linkedin"></i>
-                            <i class="fas fa-envelope" id="mail"></i>
-                        </div>
-                        <div class="copywrite">
-                            <p>Creado por Rodrigo Gomez</p>
-                        </div>
-                    </footer>
-                    -->
+                    </div>
+                    <button type="button" class="btn bg-gradient-three text-white" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Modal Bill Clicker -->
 
 
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 750,
+            speedAsDuration: true
+        });
+    </script>
+    <script>
+        $('body').scrollspy({ target: '#navBar' })
+    </script>
+    <script>
+        window.onscroll = function () {
+            // Obtenemos la posicion del scroll en pantall
+            var scroll = document.documentElement.scrollTop || document.body.scrollTop;
 
+            // Realizamos alguna accion cuando el scroll este entre la posicion 300 y 400
+            const icon = document.getElementById("icon-hero")
+            const portafolioCard = document.getElementById("portafolio-card")
+            if (scroll > 200) {
+                icon.style.animationName = "out"
+                portafolioCard.style.animationName = "cardin"
+            }
+            else {
+                icon.style.animationName = "in"
+                icon.style.cursor = "pointer";
+            }
+        }
+    </script>
     <script src="js/menu.js"></script>
     <script src="js/redireccionFooter.js"></script>
     <script src="js/platzi.js">
