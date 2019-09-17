@@ -1,6 +1,6 @@
 
 (async function load() {
-    const $proyectList = document.querySelector('.studies .proyect-list')
+    const $proyectList = document.querySelector('.proyect-list')
 
     async function getData(url) {
         const response = await fetch(url)
@@ -14,20 +14,24 @@
     }
     function createCareerTemplate(diploma) {
         return `
-        <a class="diploma" href="https://www.platzi.com/${diploma.diploma_link}">
-            <img src="${diploma.golden_achievement}" alt="">
-            <p>${diploma.title}</p>
-            <span></span>
-        </a>
+        <div class="col-3 text-center">
+            <a class="diploma" href="https://www.platzi.com/${diploma.diploma_link}">
+                <img src="${diploma.golden_achievement}" alt="">
+                <p>${diploma.title}</p>
+                <span></span>
+            </a>
+        </div>
     `
     }
     function createTitleTemplate(diploma) {
         return `
-        <a class="diploma" href="https://www.platzi.com/${diploma.diploma_link}">
-            <img src="${diploma.badge}" alt="">
-            <p>${diploma.title}</p>
-            <span></span>
-        </a>
+        <div class="col-3 text-center">
+            <a class="diploma" href="https://www.platzi.com/${diploma.diploma_link}">
+                <img src="${diploma.badge}" alt="">
+                <p>${diploma.title}</p>
+                <span></span>
+            </a>
+        </div>
     `
     }
 

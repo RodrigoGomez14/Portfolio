@@ -198,6 +198,9 @@
                     <h1 class="title">Educación</h1>
                 </div>
             </div>
+            <div class="row proyect-list">
+
+            </div>
         </div>
     </section>
     <!--Educacion -->
@@ -212,31 +215,31 @@
             </div>
             <div class="row mt-4">
                 <div class="col-8 offset-2 text-center form-group">
-                    <form>
+                    <form action="./mail.php" method="POST">
                         <div class="form-row">
                             <div class="col-8 offset-2 form-group">
-                                <input type="text" class="form-control" placeholder="Nombre Completo">
+                                <input type="text" name="nombre" class="form-control" placeholder="Nombre Completo">
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="col-8 offset-2 form-group">
-                                <input type="text" class="form-control" placeholder="E-mail">
+                                <input type="text" name='email' class="form-control" placeholder="E-mail">
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="col-8 offset-2 form-group">
-                                <input type="text" class="form-control" placeholder="Asunto">
+                                <input type="text" name="asunto" class="form-control" placeholder="Asunto">
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="col-10 offset-1 form-group">
-                                <textarea class="form-control" cols="10" rows="3"
+                                <textarea class="form-control" name="mensaje" cols="10" rows="3"
                                     placeholder="Escribe un mensaje..."></textarea>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="col-12 form-group text-center">
-                                <button type="button" class="btn btn-success btn-form">Enviar!</button>
+                                <button type="submit" class="btn btn-success btn-form">Enviar!</button>
                             </div>
                         </div>
                     </form>
