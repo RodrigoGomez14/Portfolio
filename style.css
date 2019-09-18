@@ -65,8 +65,12 @@ body{
         opacity: 0.3
     }
 }
-.modal-footer .fab{
+.modal .fab,
+.modal .fas{ 
     font-size: 30px;
+}
+.modal h5{
+    display: inline-block
 }
 .nav-link{
     font-size: 20px;
@@ -113,11 +117,25 @@ body{
 .codepen{
     color:black
 }
-.googleplay{
-    color:black
+.googleplay,
+.download{
+    color:black;
+    font-size: 20px !important
 }
 .website{
     color:black
+}
+#website-VG{
+    background: #1e5372;
+    border-radius: 50%;
+    font-size: 30px;
+    position: absolute;
+    bottom: 5%;
+    left:10%
+}
+#website-VG .fas{
+    color:  white !important;
+    text-shadow: 3px 3px 1px black
 }
 #portafolio-card{
     animation-timing-function: ease-out;

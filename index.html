@@ -20,7 +20,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <script src="./smooth-scroll.polyfills.min.js"></script>
+    <script src="./js/smooth-scroll.polyfills.min.js"></script>
     <title>Rodrigo Gomez Portafolio</title>
 </head>
 
@@ -128,7 +128,7 @@
                                             </div>
                                             <div class="col-4 form-group">
                                                 <div class="card" style="width: 18rem">
-                                                    <a href="">
+                                                    <a href="" data-toggle="modal" data-target="#modalRickYMorty">
                                                         <img src="./assets/img/rick y morty.png" class="card-img"
                                                             alt="...">
                                                     </a>
@@ -136,7 +136,7 @@
                                             </div>
                                             <div class="col-4 form-group">
                                                 <div class="card" style="width: 18rem">
-                                                    <a href="">
+                                                    <a href="" data-toggle="modal" data-target="#modalPlatziVideo">
                                                         <img src="./assets/img/Platzi Video.png" class="card-img"
                                                             alt="...">
                                                     </a>
@@ -148,7 +148,7 @@
                                 <div class="tab-pane fade" id="react" role="tabpanel" aria-labelledby="profile-tab">
                                     <div class="col-4 offset-4 form-group">
                                         <div class="card" style="width: 18rem">
-                                            <a href="">
+                                            <a href="" data-toggle="modal" data-target="#modalToDoList">
                                                 <img src="./assets/img/ToDoList.png" class="card-img" alt="...">
                                             </a>
                                         </div>
@@ -160,7 +160,8 @@
                                         <div class="row">
                                             <div class="col-4">
                                                 <div class="card" style="width: 18rem">
-                                                    <a href="">
+                                                    <a href="" data-toggle="modal"
+                                                        data-target="#modalAnotadorUniversal">
                                                         <img src="./assets/img/AnotadorUniversal.jpg" class="card-img"
                                                             alt="...">
                                                     </a>
@@ -172,9 +173,12 @@
                                 <div class="tab-pane fade" id="sitiosWeb" role="tabpanel" aria-labelledby="contact-tab">
                                     <div class="col-4 offset-4 form-group">
                                         <div class="card" style="width: 18rem">
-                                            <a href="">
-                                                <img src="./assets/img/valvulas gomez.png" class="card-img" alt="...">
-                                            </a>
+                                            <img src="./assets/img/valvulas gomez.png" class="card-img" alt="...">
+                                            <div id="website-VG" class="pl-2 pr-2">
+                                                <a href="http://www.valvulasgomez.com">
+                                                    <i class="fas fa-globe-americas website"></i>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -241,7 +245,7 @@
             </div>
             <div class="row mt-4">
                 <div class="col-8 offset-2 text-center form-group">
-                    <form action="mail.php" method="POST">
+                    <form action="https://formspree.io/rodrigogomez548@gmail.com" method="POST">
                         <div class="form-row">
                             <div class="col-8 offset-2 form-group">
                                 <input type="text" name="nombre" class="form-control" placeholder="Nombre Completo">
@@ -342,13 +346,13 @@
                 <div class="modal-body">
                     <div class="container">
                         <div class="row">
-                            <img src="./assets/img/Dollar Clicker.PNG" style="max-width: 100%" alt="">
+                            <div class="col-12">
+                                <img src="./assets/img/Dollar Clicker.PNG" style="max-width: 100%" alt="">
+                            </div>
                         </div>
                         <div class="row mt-4">
                             <div class="col-10 offset-1 text-left">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo rerum iste
-                                    consequuntur officia, exercitationem ipsum quibusdam, autem optio, voluptatum ullam
-                                    numquam debitis vero tempora hic? Exercitationem ea quia voluptatem incidunt.</p>
+                                <p>Juego clicker usando Javascript vanilla</p>
                             </div>
                         </div>
                     </div>
@@ -370,6 +374,216 @@
         </div>
     </div>
     <!--Modal Bill Clicker -->
+
+    <!--Modal Info Rick y Morty -->
+    <div class="modal fade" id="modalRickYMorty" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-one" id="exampleModalLabel">Info Rick y Morty</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <img src="./assets/img/rick y morty.png" style="max-width: 100%" alt="">
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col form-group">
+                                <span class="badge badge-warning">JS Vanilla</span>
+                                <span class="badge badge-info">Bootstrap</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-10 offset-1 text-left">
+                                <p>Pequeña guia de personajes, lugares y episodios de la serie Rick y Morty usando JS
+                                    vanilla, funciones asincronas con llamados a una API REST, template literals,
+                                    Bootstrap.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col text-center">
+                                <i class="fas fa-globe-americas website" id="website-rickYMorty"></i>
+                            </div>
+                            <div class="col text-center">
+                                <i class="fab fa-github github" id="github-rickYMorty"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn bg-gradient-three text-white" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Modal Info Rick y Morty -->
+
+    <!--Modal PlatziVideo -->
+    <div class="modal fade" id="modalPlatziVideo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-one" id="exampleModalLabel">PlatziVideo</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <img src="./assets/img/Platzi Video.png" style="max-width: 100%" alt="">
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col form-group">
+                                <span class="badge badge-warning">JS Vanilla</span>
+                                <span class="badge badge-info">Bootstrap</span>
+                                <span class="badge badge-secondary">Responsive</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-10 offset-1 text-left">
+                                <p>Guia de pelicualas hecho con acceso a una descripcion, trailers, ficha en IMDB, entre
+                                    otros.
+                                    Datos traidos desde una API REST. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col text-center">
+                                <i class="fas fa-globe-americas website" id="website-platziVideo"></i>
+                            </div>
+                            <div class="col text-center">
+                                <i class="fab fa-github github" id="github-platziVideo"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn bg-gradient-three text-white" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Modal PlatziVideo -->
+
+    <!--Modal ToDoList -->
+    <div class="modal fade" id="modalToDoList" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-one" id="exampleModalLabel">To Do List</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <img src="./assets/img/ToDoList.png" style="max-width: 100%" alt="">
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col form-group">
+                                <span class="badge badge-primary">React</span>
+                                <span class="badge badge-info">Bootstrap</span>
+                                <span class="badge badge-secondary">Responsive</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-10 offset-1 text-left">
+                                <p>Simple lista de tareas con la posibiliadad de agregar y quitar tareas ademas de poder
+                                    tachar cada una de ellas. <br> Manejo de componentes y sus estados con React. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col text-center">
+                                <i class="fas fa-globe-americas website" id="website-ToDoList"></i>
+                            </div>
+                            <div class="col text-center">
+                                <i class="fab fa-github github" id="github-ToDoList"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn bg-gradient-three text-white" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Modal ToDoList -->
+
+    <!--Modal AnotadorUniversal -->
+    <div class="modal fade" id="modalAnotadorUniversal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-one" id="exampleModalLabel">Anotador Universal para juegos de mesa</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <img src="./assets/img/AnotadorUniversal.jpg" style="max-width: 100%" alt="">
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-10 offset-1 text-left">
+                                <p>Aplicacion movil con la capacidad de anotar los puntajes de distintos juegos de mesa
+                                    como el Truco, Generala, ChinChon, etc.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col form-group text-left">
+                                <h5>V 0.1</h5>
+                                <span class="badge badge-danger">Java</span>
+                                <span class="badge badge-success">Android</span>
+                            </div>
+                            <div class="col form-group text-right">
+                                <i class="fab fa-google-play googleplay" id="googleplay-AnotadorUniversal"></i>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col form-group text-left">
+                                <h5>V 1.0</h5>
+                                <span class="badge badge-danger">Angular</span>
+                                <span class="badge badge-secondary">Ionic</span>
+                            </div>
+                            <div class="col form-group text-right">
+                                <a href="./Anotador Universal.apk" download="Anotador Universal Ionic.apk"
+                                    class="btn bg-gradient-three text-white"> Descargar
+                                    .apk</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn bg-gradient-three text-white" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Modal AnotadorUniversal -->
 
 
     <script>

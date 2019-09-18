@@ -6,21 +6,34 @@ const $githubDolarClicker = document.getElementById('github-DollarClicker')
 $githubDolarClicker.addEventListener("click", () => {
     window.location.href = 'https://github.com/RodrigoGomez14/Bill-Clicker'
 })
-const $rYm = document.getElementById('rick-morty')
-$rYm.addEventListener("click", () => {
+const $rYmWebsite = document.getElementById('website-rickYMorty')
+$rYmWebsite.addEventListener("click", () => {
     window.location.href = 'https://rodrigogomez14.github.io/Rick-Morty/'
 })
-const $PV = document.getElementById('platziVideo')
-$PV.addEventListener("click", () => {
+const $rYmGithub = document.getElementById('github-rickYMorty')
+$rYmGithub.addEventListener("click", () => {
+    window.location.href = 'https://github.com/RodrigoGomez14/Rick-Morty'
+})
+const $PVWebsite = document.getElementById('website-platziVideo')
+$PVWebsite.addEventListener("click", () => {
     window.location.href = 'https://rodrigogomez14.github.io/PlatziVideo/'
 })
-const $VG = document.getElementById('valvulasGomez')
-$VG.addEventListener("click", () => {
-    window.location.href = 'http://www.valvulasgomez.com'
+const $PVgithub = document.getElementById('github-platziVideo')
+$PVgithub.addEventListener("click", () => {
+    window.location.href = 'https://github.com/RodrigoGomez14/PlatziVideo'
 })
-const $TDL = document.getElementById('ToDoList')
-$TDL.addEventListener("click", () => {
+const $TDLWebsite = document.getElementById('website-ToDoList')
+$TDLWebsite.addEventListener("click", () => {
     window.location.href = 'https://rodrigogomez14.github.io/ReactToDoList/'
 })
+const $TDLgithub = document.getElementById('github-ToDoList')
+$TDLgithub.addEventListener("click", () => {
+    window.location.href = 'https://github.com/RodrigoGomez14/ReactToDoList'
+})
+const $anotadorUniversalGP = document.getElementById('googleplay-AnotadorUniversal')
+$anotadorUniversalGP.addEventListener("click", () => {
+    window.location.href = 'https://play.google.com/store/apps/details?id=com.AnotadorUniversal.rodrigo.anotadoruniversal&hl=es_AR'
+})
+
 
 
