@@ -14,10 +14,10 @@
     }
     function createCareerTemplate(diploma) {
         return `
-        <div class="col-3 text-center">
+        <div class="col-6 col-sm-4 col-lg-3 form-group text-center">
             <a class="diploma" href="https://www.platzi.com/${diploma.diploma_link}">
                 <img src="${diploma.golden_achievement}" alt="">
-                <p>${diploma.title}</p>
+                <p class="diploma-title">${diploma.title}</p>
                 <span></span>
             </a>
         </div>
@@ -25,10 +25,10 @@
     }
     function createTitleTemplate(diploma) {
         return `
-        <div class="col-3 text-center">
+        <div class="col-6 col-sm-4 col-lg-3 form-group text-center">
             <a class="diploma" href="https://www.platzi.com/${diploma.diploma_link}">
                 <img src="${diploma.badge}" alt="">
-                <p>${diploma.title}</p>
+                <p class="diploma-title">${diploma.title}</p>
                 <span></span>
             </a>
         </div>

@@ -112,11 +112,6 @@ body{
 .btn-form{
     width: 75%
 }
-.diploma p{
-    color: #1e5372;
-    font-weight: bold;
-    font-size: 17px
-}
 .modal .fab,
 .modal .fas{
     cursor: pointer
@@ -168,4 +163,29 @@ body{
     }
     to{
     }
+}
+.modal img{
+    max-width: 75%
+}
+.card ul{
+    justify-content: center
+}
+.diploma-title{
+    color:white !important;
+    text-shadow: 3px 3px 2px black;
+    font-size: 20px;
+    margin:0;
+    display: flex;
+    font-weight: normal;
+    align-items: flex-end;
+    justify-content: center;
+    position: absolute;
+}
+.diploma{
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
 }
