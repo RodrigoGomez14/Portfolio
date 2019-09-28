@@ -11,7 +11,7 @@ body{
     display:flex;
     flex-direction:column;
     justify-content:center;
-    background-image: url('/assets/img/programacion2.jpg');
+    background-image: url(/assets/img/programacion2.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: center center;
@@ -22,7 +22,7 @@ body{
 }
 #educacion{
     position: relative;
-    background-image: url('/assets/img/macbook.jpg');
+    background-image: url(/assets/img/macbook.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: center center;
