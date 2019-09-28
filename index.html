@@ -55,7 +55,7 @@
     <!--NavBar-->
 
     <!--Hero-->
-    <section id="inicio" class="page-section bg-gradient-one  text-white">
+    <section id="inicio" class="page-section  text-white">
         <div class="container">
             <div class="row mt-4">
                 <div class="col-12 text-center">
@@ -210,11 +210,6 @@
     <section id="acercaDe" class="page-section bg-gradient-one  text-white">
         <div class="container">
             <div class="row">
-                <div class="col-12 form-group text-center">
-                    <h1 class="title">Acerca De...</h1>
-                </div>
-            </div>
-            <div class="row">
                 <div class="col-12 text-left col-sm-6 col-md-5 offset-md-1 my-auto">
                     <p class="portafolio-p">
                         AQUI SE PODRAN ENCONTRAR ALGUNOS DE MIS PROYECTOS PERSONALES Y EL CAMINO POR EL QUE
@@ -234,11 +229,14 @@
 
 
     <!--Educacion -->
-    <section id="educacion" class="page-section text-one">
+    <section id="educacion" class="page-section bg-gradient-one text-white">
         <div class="container">
             <div class="row">
                 <div class="col-12 form-group text-center">
                     <h1 class="title">Educación</h1>
+                    <span class="badge badge-pill badge-dark">
+                        <img src="./assets/img/logoPlatzi.webp" height="40px" alt=""
+                    </span>
                 </div>
             </div>
             <div class="row proyect-list">
@@ -537,7 +535,7 @@
                         </div>
                         <div class="row">
                             <div class="col form-group text-left">
-                                <h5>V 1.0</h5>
+                                <h5>V 0.2</h5>
                                 <span class="badge badge-danger">Angular</span>
                                 <span class="badge badge-secondary">Ionic</span>
                             </div>
@@ -547,6 +545,18 @@
                                     .apk</a>
                             </div>
                         </div>
+                        <div class="row">
+                                <div class="col form-group text-left">
+                                    <h5>V 1.0</h5>
+                                    <span class="badge badge-primary">React</span>
+                                    <span class="badge badge-success">Android</span>
+                                    <span class="badge badge-secondary">iOS</span>
+                                </div>
+                                <div class="col form-group text-right">
+                                    <a href="./Anotador Universal.apk" download="Anotador Universal Ionic.apk"
+                                        class="btn bg-gradient-three text-white disabled"> Proximamente...</a>
+                                </div>
+                            </div>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -574,13 +584,16 @@
 
             // Realizamos alguna accion cuando el scroll este entre la posicion 300 y 400
             const icon = document.getElementById("icon-hero")
+            const navBar = document.getElementById("navBar")
             const portafolioCard = document.getElementById("portafolio-card")
             if (scroll > 200) {
                 icon.style.animationName = "out"
                 portafolioCard.style.animationName = "cardin"
+                navBar.style.transform="translateY(0px)"
             }
             else {
                 icon.style.animationName = "in"
+                navBar.style.transform="translateY(-100px)"
                 icon.style.cursor = "pointer";
             }
         }

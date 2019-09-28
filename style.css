@@ -1,12 +1,41 @@
 body{
     position:relative;
 }
+#navBar{
+    transition: .6s;
+    transform: translateY(-100px)
+}
 #inicio{
     min-height: 100vh;
     position:relative;
     display:flex;
     flex-direction:column;
     justify-content:center;
+    background-image: url('/assets/img/programacion2.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat
+}
+#acercaDe{
+    padding: 15rem 0
+}
+#educacion{
+    position: relative;
+    background-image: url('/assets/img/macbook.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+ }
+#acercaDe::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+    z-index: 1;
 }
 .bg-gradient-one{
     background: linear-gradient(45deg,#2c3e50,#273b47 25%,#1e5372d5);
@@ -90,8 +119,12 @@ body{
     font-weight: bolder
 }
 .title{
+    text-shadow: 2px 2px 1px black;
     font-size: 3rem;
     font-weight: bold
+}
+#portafolio .title{
+    text-shadow: 2px 2px 1px lightgrey;
 }
 .subtitle{
     font-size: 40px;
@@ -110,7 +143,9 @@ body{
 }
 .portafolio-p{
     font-size: 1.2rem;
-    font-weight: lighter
+    color: white;
+    text-shadow: 2px 2px 3px #1e5372;
+    font-weight: 400
 }
 .btn-form{
     width: 75%
@@ -178,16 +213,15 @@ body{
     text-shadow: 3px 3px 2px black;
     font-size: 20px;
     margin:0;
-    display: flex;
-    font-weight: normal;
-    align-items: flex-end;
-    justify-content: center;
-    position: absolute;
+}
+.diploma:hover .diploma-title{
+    text-decoration-color: aliceblue
 }
 .diploma{
     position: relative;
     display: flex;
-    align-items: flex-end;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     cursor: pointer;
     text-decoration: none;
