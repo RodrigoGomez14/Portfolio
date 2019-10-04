@@ -1,5 +1,6 @@
 body{
     position:relative;
+    font-family:auto
 }
 #navBar{
     transition: .6s;
