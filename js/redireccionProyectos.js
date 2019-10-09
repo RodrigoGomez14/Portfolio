@@ -30,6 +30,14 @@ const $TDLgithub = document.getElementById('github-ToDoList')
 $TDLgithub.addEventListener("click", () => {
     window.location.href = 'https://github.com/RodrigoGomez14/ReactToDoList'
 })
+const $CDSWebsite = document.getElementById('website-CentralDeStock')
+$CDSWebsite.addEventListener("click", () => {
+    window.location.href = 'https://rodrigogomez14.github.io/Central-De-Stock/'
+})
+const $CDSgithub = document.getElementById('github-CentralDeStock')
+$CDSgithub.addEventListener("click", () => {
+    window.location.href = 'https://github.com/RodrigoGomez14/Central-De-Stock'
+})
 const $anotadorUniversalGP = document.getElementById('googleplay-AnotadorUniversal')
 $anotadorUniversalGP.addEventListener("click", () => {
     window.location.href = 'https://play.google.com/store/apps/details?id=com.AnotadorUniversal.rodrigo.anotadoruniversal&hl=es_AR'
