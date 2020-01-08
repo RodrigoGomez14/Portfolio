@@ -30,6 +30,14 @@ const $TDLgithub = document.getElementById('github-ToDoList')
 $TDLgithub.addEventListener("click", () => {
     window.location.href = 'https://github.com/RodrigoGomez14/ReactToDoList'
 })
+const $PPTWebsite = document.getElementById('website-PiedraPapelTijera')
+$PPTWebsite.addEventListener("click", () => {
+    window.location.href = 'https://rodrigogomez14.github.io/Rock-Paper-Scissors/'
+})
+const $PPTgithub = document.getElementById('github-PiedraPapelTijera')
+$PPTgithub.addEventListener("click", () => {
+    window.location.href = 'https://github.com/RodrigoGomez14/Rock-Paper-Scissors'
+})
 const $CDSWebsite = document.getElementById('website-CentralDeStock')
 $CDSWebsite.addEventListener("click", () => {
     window.location.href = 'https://rodrigogomez14.github.io/Central-De-Stock/'
