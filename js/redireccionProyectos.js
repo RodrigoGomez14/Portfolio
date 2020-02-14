@@ -46,6 +46,14 @@ const $CDSgithub = document.getElementById('github-CentralDeStock')
 $CDSgithub.addEventListener("click", () => {
     window.location.href = 'https://github.com/RodrigoGomez14/Central-De-Stock'
 })
+const $ADCWebsite = document.getElementById('website-AsistenteDeCultivo')
+$ADCWebsite.addEventListener("click", () => {
+    window.location.href = 'https://rodrigogomez14.github.io/Asistente-De-Cultivo/'
+})
+const $ADCgithub = document.getElementById('github-AsistenteDeCultivo')
+$ADCgithub.addEventListener("click", () => {
+    window.location.href = 'https://github.com/RodrigoGomez14/Asistente-De-Cultivo'
+})
 const $anotadorUniversalGP = document.getElementById('googleplay-AnotadorUniversal')
 $anotadorUniversalGP.addEventListener("click", () => {
     window.location.href = 'https://play.google.com/store/apps/details?id=com.AnotadorUniversal.rodrigo.anotadoruniversal&hl=es_AR'
